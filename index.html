@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" id="theme" href="./light.css">
+    <link rel="stylesheet" href="./font.css">
+    <title>Frontend Mentor | Todo app</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <picture>
+                    <img src="./images/bg-desktop-light.jpg" alt="">
+                </picture>
+            </header>
+
+            <section>
+                <div class="head">
+                    <span>Todo</span>
+                    <div class="icon" onclick="toggleTheme()">
+                        <img src="./images/icon-moon.svg" alt="">
+                    </div>
+                </div>
+
+                <form class="create">
+                    <button>
+                        <span class="check">
+                            <img src="./images/icon-check.svg" alt="">
+                        </span>
+                    </button>
+                    <input type="text" placeholder="Create a new todo">
+                </form>
+
+                <div class="content">
+                    <ul class="lists">
+                    </ul>
+                    <div class="foot">
+                        <div class="counter">
+                            <span>1</span> items left
+                        </div>
+                        <ul>
+                            <li class="all active">All</li>
+                            <li class="act">Active</li>
+                            <li class="complete">Completed</li>
+                        </ul>
+                        <div class="clear" onclick="clearComplete()">Clear Completed</div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <span>Drag and drop to reader list</span>
+            </footer>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

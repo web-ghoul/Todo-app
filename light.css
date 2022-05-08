@@ -1,0 +1,76 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(236, 9%, 61%);
+}
+
+span.check {
+    border: 2px solid hsl(233, 11%, 84%);
+}
+
+span.check img {
+    opacity: 0;
+}
+
+span.check.active img {
+    opacity: 1;
+}
+
+span.check.active {
+    background-image: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+span.check:hover {
+    border-color: #999;
+}
+
+section .head span,
+span.check i {
+    color: hsl(0, 0%, 98%);
+}
+
+section form {
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+section form input {
+    background-color: hsl(0, 0%, 98%);
+    caret-color: hsl(220, 98%, 61%);
+}
+
+section form input:focus {
+    color: hsl(235, 21%, 11%);
+}
+
+section .content {
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+section .content .lists li {
+    border-bottom: 1px solid hsl(233, 11%, 84%);
+}
+
+section .content .lists li .task span.do {
+    color: hsl(235, 21%, 11%);
+}
+
+section .content .lists li .task span.do.line {
+    color: hsl(233, 11%, 84%);
+}
+
+section .content .foot ul li.active {
+    color: hsl(220, 98%, 61%);
+}
+
+section .content .foot ul li:hover,
+section .content .foot .clear:hover {
+    color: hsl(235, 21%, 11%);
+}
+
+@media (max-width:992px) {
+    section .content .foot ul {
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+}

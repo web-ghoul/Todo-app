@@ -1,0 +1,92 @@
+body {
+    background-color: hsl(235, 21%, 11%);
+    color: hsl(236, 9%, 61%);
+}
+
+span.check {
+    border: 2px solid hsl(233, 14%, 35%);
+}
+
+span.check img {
+    opacity: 0;
+}
+
+span.check.active img {
+    opacity: 1;
+}
+
+span.check:hover {
+    border-color: hsl(280, 87%, 65%);
+}
+
+span.check.active {
+    background-image: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+span.check i {
+    color: hsl(235, 24%, 19%);
+}
+
+span.check.active i {
+    color: hsl(0, 0%, 98%);
+}
+
+section .head span {
+    color: #fff;
+}
+
+section form {
+    background-color: hsl(235, 24%, 19%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+section form input {
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(236, 9%, 61%);
+    caret-color: hsl(220, 98%, 61%);
+}
+
+section form input::placeholder {
+    color: hsl(236, 9%, 61%);
+}
+
+section form input:focus {
+    color: hsl(0, 0%, 98%);
+}
+
+section .content {
+    background-color: hsl(235, 24%, 19%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+section .content .lists li {
+    border-bottom: 1px solid hsl(233, 14%, 35%);
+}
+
+section .content .lists li .task span.do {
+    color: hsl(0, 0%, 98%);
+}
+
+section .content .lists li .task span.do.line {
+    color: hsl(236, 9%, 61%);
+}
+
+section .content .foot ul li.active {
+    color: hsl(220, 98%, 61%);
+}
+
+section .content .foot ul li:not(.active):hover,
+section .content .foot .clear:hover {
+    color: hsl(0, 0%, 98%);
+}
+
+footer span {
+    color: hsl(236, 9%, 61%);
+}
+
+@media (max-width:992px) {
+    section .content .foot ul {
+        background-color: hsl(235, 24%, 19%);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+}
