@@ -74,19 +74,20 @@ function dataHandle() {
             tasks += `  <li class= "${array[i].hide ? `${array[i].id} hide`: `${array[i].id}`}" >
                             <div class="task">
                                 <span class="check ${array[i].active ? "": "active"}" onclick = "checks(this)">
-                                    <i class="fas fa-check"></i>
+                                    <img src="./images/icon-check.svg" alt="">
                                 </span>
                                 <span class='do ${array[i].active ? "":"line"}' onclick = "doTask(this)">${array[i].name}</span>
+                                <span class="icon" onclick="closed(this)">
+                                    <img src="./images/icon-cross.svg" alt="">
+                                </span>
                             </div>
-                            <div class="icon" onclick="closed(this)">
-                                <img src="./images/icon-cross.svg" alt="">
-                            </div>
+                            
                         </li>`
         }
         lists.innerHTML = tasks
     } else {
         lists.innerHTML = ` <li style="justify-content:center">
-                                <div class="task" >
+                                <div class="task">
                                     <span style="text-align:center">Add your tasks</span>
                                 </div>
                             </li>`
@@ -118,7 +119,7 @@ function storageHandle(task) {
 //Close Button Handle
 function closed(e) {
     let array = JSON.parse(localStorage.getItem('tasks'))
-    let elID = e.parentElement.classList[0]
+    let elID = e.parentElement.parentElement.classList[0]
     for (let i = 0; i < array.length; i++) {
         if (array[i].id === +elID) {
             array[i] = ''

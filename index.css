@@ -130,6 +130,7 @@ section .content .lists {
     display: grid;
     align-items: center;
     justify-content: stretch;
+    word-break: break-all;
 }
 
 section .content .lists li {
@@ -140,18 +141,18 @@ section .content .lists li {
 }
 
 section .content .lists li .task {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 section .content .lists li .task span {
-    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 
 section .content .lists li .icon {
@@ -164,6 +165,13 @@ section .content .lists li .icon:hover,
 section .content .lists li:hover .icon {
     cursor: pointer;
     opacity: 1;
+}
+
+section .content .lists li .task span.do {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 section .content .lists li .task span.do:hover {
